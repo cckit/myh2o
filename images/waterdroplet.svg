@@ -1,0 +1,22 @@
+<?xml version="1.0"?><svg width="394.41351" height="554.93317" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="svg_3" x2="1" y2="1" x1="0.363281" y1="0.441406">
+   <stop stop-color="#bf0000" stop-opacity="0.996094" offset="0"/>
+   <stop stop-color="#000000" stop-opacity="0.996094" offset="1"/>
+  </linearGradient>
+  <pattern height="100" width="100" y="0" x="0" patternUnits="userSpaceOnUse" id="gridpattern">
+   <image height="100" width="100" y="0" x="0"/>
+  </pattern>
+ </defs>
+ <metadata id="metadata7">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <g id="g2462">
+    <path id="path2530" d="m394.416138,363.094574c0,105.894867 -88.341187,191.838531 -197.190308,191.838531c-108.849121,0 -199.2041,-85.962799 -197.19019,-191.838531c2.67579,-142.019196 111.086194,-199.866165 197.19019,-363.094574c91.455933,157.876678 197.190308,257.199707 197.190308,363.094574z" stroke-dashoffset="0" stroke-miterlimit="4" marker-end="none" marker-mid="none" marker-start="none" stroke-width="3" fill-rule="evenodd" fill-opacity="0.53" fill="#e51010" opacity="0.698551"/>
+    <path id="path3520" d="m387.608154,362.649567c0,101.679596 -84.824829,184.202362 -189.341064,184.202362c-104.516357,0 -191.2749,-82.541046 -189.34131,-184.202362c2.56934,-136.36618 106.664552,-191.910629 189.34131,-348.641726c87.815308,151.592395 189.341064,246.961917 189.341064,348.641726z" stroke-dashoffset="0" stroke-miterlimit="4" marker-end="none" marker-mid="none" marker-start="none" stroke-width="3" fill-rule="evenodd" fill="#bf0000" opacity="0.698551"/>
+    <path id="path3556" d="m394.416138,361.532074c0,105.894867 -88.341187,191.838531 -197.190308,191.838531c-108.849121,0 -199.204102,-85.962769 -197.190186,-191.838531c2.675781,-142.019196 111.086182,-199.866165 197.190186,-363.094574c91.455933,157.876678 197.190308,257.199707 197.190308,363.094574z" stroke-dashoffset="0" stroke-miterlimit="4" marker-end="none" marker-mid="none" marker-start="none" stroke-width="3" fill-rule="evenodd" fill="url(#svg_3)" opacity="0.698551"/>
+   </g>
+  </g>
+ </g>
+</svg>
