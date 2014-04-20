@@ -10,12 +10,25 @@
     <title>Water Quality Map</title>
 
     <!-- JavaScript and CSS -->
-    <?php include('include.php'); ?>
+    <?php include 'include.php'; ?>
     <script src="js/map.js"></script>
     <link href="css/map.css" rel="stylesheet">
 </head>
 
 <body>
+    <?php 
+        include 'query.php'; 
+    ?>
+
+        <h1><?php 
+
+        $result = print_stuff();
+        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            echo print_r($line);
+        }
+        ?> </h1>
+
+
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
