@@ -23,7 +23,7 @@
         <h1><?php 
 
         $result = print_stuff();
-        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
             echo print_r($line);
         }
         ?> </h1>
@@ -46,9 +46,11 @@
                 <ul class="nav navbar-nav navbar">
                     <li><a href="#">Project</a>
                     </li>
-                    <li><a href="#">Live Map</a>
+                    <li><a href="map.php">Live Map</a>
                     </li>
                     <li><a href="#">Charts</a>
+                    </li>
+                    <li><a href="upload.php">Upload Data</a>
                     </li>
                     <li><a href="#">About us</a>
                     </li>

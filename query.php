@@ -1,17 +1,18 @@
 <?php
 // Connecting, selecting database
-function connect($hostname, $username, $password)
+function connect($hostname, $username, $password, $database)
 {
-    $link = mysql_connect($hostname, $username, $password)
-        or die('Could not connect: ' . mysql_error());
-    echo 'Connected successfully';
+    $link = mysqli_connect($hostname, $username, $password, $database);
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+
     return $link;
 }
 
-function query($database, $table, $longitude, $latitude, $width)
+function query($link, $table, $longitude, $latitude, $width)
 {
-    mysql_select_db($database) or die('Could not select database');
-
     $lng_min = $longitude - $width;
     $lng_max = $longitude + $width;
     $lat_min = $latitude - $width;
@@ -23,15 +24,17 @@ function query($database, $table, $longitude, $latitude, $width)
                     (Longitude BETWEEN $lng_min AND $lng_max)
                 AND (Latitude BETWEEN $lat_min AND $lat_max)
              ";
-    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    $result = mysqli_query($link, $query);
     return $result;
 }
+
+
 
 function toHTML($result)
 {
     // Printing results in HTML
     echo "<table>\n";
-    while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
         echo "\t<tr>\n";
         foreach ($line as $col_value) {
             echo "\t\t<td>$col_value</td>\n";
@@ -40,21 +43,20 @@ function toHTML($result)
     }
     echo "</table>\n";
     // Free resultset
-    mysql_free_result($result);
+    mysqli_free_result($result);
 
 }
 
 function close_connection($link)
 {
     // Closing connection
-    mysql_close($link);
+    mysqli_close($link);
 }
 
 function print_stuff()
 {
-    $link = connect('localhost', 'root', '821015jiajia');
-    $result = query('myh2o', 'water_quality', 120, 30, 0.2);
-
+    $link = connect('localhost', 'root', '821015jiajia', 'myh2o');
+    $result = query($link, 'water_quality', 120, 30, 0.2);
     return $result;
 }
 ?>
