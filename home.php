@@ -32,6 +32,8 @@
                         </li>
                         <li><a href="#">Charts</a>
                         </li>
+                        <li><a href="query.php">Upload Data</a>
+                        </li>
                         <li><a href="#">About us</a>
                         </li>
                     </ul>
