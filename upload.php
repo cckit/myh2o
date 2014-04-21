@@ -65,7 +65,7 @@
     <div class="container">
         <hr>
         <form action="insert.php" method="post">
-            Longiude: <input type="text" name="longitude">
+            Longiude: <input type="" name="longitude">
             Latitude: <input type="text" name="latitude">
             PH: <input type="text" name="ph">
             ammonium_nitrate: <input type="text" name="ammonium_nitrate">
