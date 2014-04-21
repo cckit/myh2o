@@ -1,18 +1,17 @@
 <?php
 // Connecting, selecting database
-function connect($hostname, $username, $password, $database)
+function connect($hostname, $username, $password)
 {
-    $link = mysqli_connect($hostname, $username, $password, $database);
-    if (mysqli_connect_errno()) {
-        printf("Connect failed: %s\n", mysqli_connect_error());
-        exit();
-    }
-
+    $link = mysql_connect($hostname, $username, $password)
+        or die('Could not connect: ' . mysql_error());
+    echo 'Connected successfully';
     return $link;
 }
 
-function query($link, $table, $longitude, $latitude, $width)
+function query($database, $table, $longitude, $latitude, $width)
 {
+    mysql_select_db($database) or die('Could not select database');
+
     $lng_min = $longitude - $width;
     $lng_max = $longitude + $width;
     $lat_min = $latitude - $width;
@@ -24,17 +23,15 @@ function query($link, $table, $longitude, $latitude, $width)
                     (Longitude BETWEEN $lng_min AND $lng_max)
                 AND (Latitude BETWEEN $lat_min AND $lat_max)
              ";
-    $result = mysqli_query($link, $query);
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
     return $result;
 }
-
-
 
 function toHTML($result)
 {
     // Printing results in HTML
     echo "<table>\n";
-    while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
         echo "\t<tr>\n";
         foreach ($line as $col_value) {
             echo "\t\t<td>$col_value</td>\n";
@@ -43,26 +40,28 @@ function toHTML($result)
     }
     echo "</table>\n";
     // Free resultset
-    mysqli_free_result($result);
+    mysql_free_result($result);
 
 }
 
 function close_connection($link)
 {
     // Closing connection
-    mysqli_close($link);
+    mysql_close($link);
 }
 
 function print_stuff()
 {
     $link = connect('localhost', 'root', '821015jiajia');
     $result = query('myh2o', 'water_quality', 120, 30, 0.2);
+
     return $result;
 }
 
+
 function all_points()
 {
-    $link = connect('localhost', 'root', '');
+    $link = connect('localhost', 'root', '', 'myh2o');
     $result = query('myh2o', 'water_quality', 0, 0, 500);
     return $result;
 }

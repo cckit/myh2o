@@ -113,7 +113,6 @@ function initialize() {
 function codeAddress(address) {
   geocoder.geocode({ 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
-      // alert("hello");
       map.setCenter(results[0].geometry.location);
       map.setZoom(12);
       // if(marker)
