@@ -103,8 +103,11 @@ function initialize() {
 
     (function(mark) {
       var ind = i;
+      curWindow = false;
       google.maps.event.addListener(mark, 'click', function() {
+        if (curWindow) curWindow.close();
         infowindows[ind].open(map, markers[ind]);
+        curWindow = infowindows[ind];
       });
     }(markers[i]));
   }
