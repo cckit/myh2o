@@ -26,7 +26,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Project</a>
+                        <li><a href="project.php">Project</a>
                         </li>
                         <li><a href="map.php">Live Map</a>
                         </li>
@@ -34,7 +34,7 @@
                         </li>
                         <li><a href="query.php">Upload Data</a>
                         </li>
-                        <li><a href="#">About us</a>
+                        <li><a href="about.php">About us</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">

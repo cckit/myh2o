@@ -25,19 +25,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html" style="font-size:24px">MyH<sub>2</sub>O</a>
+                <a class="navbar-brand" href="home.php" style="font-size:24px">MyH<sub>2</sub>O</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 1em;">
                 <ul class="nav navbar-nav navbar">
-                    <li><a href="#">Project</a>
+                    <li><a href="project.php">Project</a>
                     </li>
-                    <li><a href="#">Live Map</a>
+                    <li><a href="map.php">Live Map</a>
                     </li>
                     <li><a href="#">Charts</a>
                     </li>
-                    <li><a href="#">About us</a>
+                    <li><a href="upload.php">Upload Data</a>
+                    </li>
+                    <li><a href="about.php">About us</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -85,6 +87,7 @@
                     <input type="text" id="lblLocation" class="form-control" placeholder="Search by Loaction">
                     <span class="input-group-btn">
                     <button id="btnFindLocation" class="btn btn-primary" type="button">Find!</button>
+
                   </span>
                 </div>
                 <br>
@@ -160,6 +163,7 @@
 
     <div class="container">
         <hr>
+        <h3>Alert: This area contains 30% more Heavy Metal than National Standard.</h3>
     </div>
     <!-- /.container -->
 
