@@ -179,7 +179,7 @@
         include 'query.php'; 
         $result = all_points();
         // echo <h1> . $result . </h1>;
-        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+        while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
             // Sorry this is possibly the ugliest code I've ever written but it works!
             echo '<script type="text/javascript">';
             echo 'data.push(' . json_encode($line) . ');';
