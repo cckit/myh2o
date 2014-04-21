@@ -67,13 +67,13 @@ function close_connection($link)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html" style="font-size:24px">MyH<sub>2</sub>O</a>
+                <a class="navbar-brand" href="home.php" style="font-size:24px">MyH<sub>2</sub>O</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 1em;">
                 <ul class="nav navbar-nav navbar">
-                    <li><a href="#">Project</a>
+                    <li><a href="project.php">Project</a>
                     </li>
                     <li><a href="map.php">Live Map</a>
                     </li>
@@ -81,7 +81,7 @@ function close_connection($link)
                     </li>
                     <li><a href="upload.php">Upload Data</a>
                     </li>
-                    <li><a href="#">About us</a>
+                    <li><a href="about.php">About us</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -102,13 +102,16 @@ function close_connection($link)
         </div>
         <!-- /.container -->
     </nav>
-
+    <div class="container">
+        <hr>
+    </div>
+    <!-- /.container -->
 
     <div class="container">
         <div class="row">
 
             <div class="col-lg-12">
-                <h1 class="page-header">Water Quality Map
+                <h1 class="page-header">Your Data
                     
                 </h1>
             </div>

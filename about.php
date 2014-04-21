@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html" style="font-size:24px">MyH<sub>2</sub>O</a>
+                <a class="navbar-brand" href="home.php" style="font-size:24px">MyH<sub>2</sub>O</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,6 +54,13 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    </nav>
+    <div class="container">
+        <hr>
+    </div>
+    <!-- /.container -->
+    
     <div class="container">
 
         <div class="row">

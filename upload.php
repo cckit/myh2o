@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html" style="font-size:24px">MyH<sub>2</sub>O</a>
+                <a class="navbar-brand" href="home.php" style="font-size:24px">MyH<sub>2</sub>O</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,18 +61,22 @@
         <!-- /.container -->
     </nav>
 
+    <div class="container">
+        <hr>
+    </div>
+    <!-- /.container -->
 
     <div class="container">
         <hr>
         <form action="insert.php" method="post">
-            Longiude: <input type="" name="longitude">
-            Latitude: <input type="text" name="latitude">
-            PH: <input type="text" name="ph">
-            ammonium_nitrate: <input type="text" name="ammonium_nitrate">
-            phosphate: <input type="text" name="phosphate">
-            permanganate: <input type="text" name="permanganate">
-            heavy_metal: <input type="text" name="heavy_metal">
-            email: <input type="text" name="email">
+            Longitude: <input type="" name="longitude"><br><br>
+            Latitude: <input type="text" name="latitude"><br><br>
+            PH: <input type="text" name="ph"><br><br>
+            ammonium_nitrate: <input type="text" name="ammonium_nitrate"><br><br>
+            phosphate: <input type="text" name="phosphate"><br><br>
+            permanganate: <input type="text" name="permanganate"><br><br>
+            heavy_metal: <input type="text" name="heavy_metal"><br><br>
+            email: <input type="text" name="email"><br><br>
             <input type="submit">
         </form>
 
