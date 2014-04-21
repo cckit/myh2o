@@ -11,24 +11,11 @@
 
     <!-- JavaScript and CSS -->
     <?php include 'include.php'; ?>
-    <script src="js/map.js"></script>
+    <!-- <script src="js/map.js"></script> -->
     <link href="css/map.css" rel="stylesheet">
 </head>
 
 <body>
-    <?php 
-        include 'query.php'; 
-    ?>
-
-        <h1><?php 
-
-        $result = print_stuff();
-        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
-            echo print_r($line);
-        }
-        ?> </h1>
-
-
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -176,6 +163,26 @@
     </div>
     <!-- /.container -->
 
+    <!-- Loading the Google Map from database -->
+    <script type="text/javascript">
+        var data = [];
+    </script>
+
+    <?php 
+        include 'query.php'; 
+        $result = all_points();
+        while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            // Sorry this is possibly the ugliest code I've ever written but it works!
+            echo '<script type="text/javascript">';
+            echo 'data.push(' . json_encode($line) . ');';
+            echo '</script>';
+        }
+    ?>
+    <script src="js/load_data.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Sorry for using global variables. I was having scope issues when passing local variables to initialize()
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </body>
 
 </html>
