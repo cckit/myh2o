@@ -50,15 +50,6 @@ function close_connection($link)
     mysql_close($link);
 }
 
-function print_stuff()
-{
-    $link = connect('localhost', 'root', '821015jiajia');
-    $result = query('myh2o', 'water_quality', 120, 30, 0.2);
-
-    return $result;
-}
-
-
 function all_points()
 {
     $link = connect('localhost', 'root', '', 'myh2o');
