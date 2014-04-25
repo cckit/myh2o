@@ -11,7 +11,7 @@
 
     <!-- JavaScript and CSS -->
     <?php include 'include.php'; ?>
-    <!-- <script src="js/map.js"></script> -->
+    <script src="js/map.js"></script>
     <link href="css/map.css" rel="stylesheet">
 </head>
 
@@ -90,42 +90,73 @@
                         onclick="codeAddress(document.getElementById('lblLocation').value)">
                         Find!
                     </button>
-
                   </span>
                 </div>
                 <br>
 
-                <p class="btn-toolbar">
-                    <div class="btn-group btn-toggle">
-                        <button class="btn btn-sm btn-default">OFF</button>
-                        <button class="btn btn-sm btn-primary active">ON</button>
-                    </div>
-                    Heavy Metals
-                </p>
+                <div class="input-group btn-group">
+                    <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
+                    <select class="multiselect btn-primary">
+                      <option value="HeavyMetals">Heavy Metals</option>
+                      <option value="Nitrate">Nitrate</option>
+                      <option value="Permanganate">Permanganate</option>
+                      <option value="Phosphate">Phosphate</option>
+                    </select>
+                </div>
 
-                <p class="btn-toolbar">
-                    <div class="btn-group btn-toggle">
-                        <button class="btn btn-sm btn-default">OFF</button>
-                        <button class="btn btn-sm btn-primary active">ON</button>
-                    </div>
-                    Nitrate
-                </p>
 
-                <p class="btn-toolbar">
-                    <div class="btn-group btn-toggle">
-                        <button class="btn btn-sm btn-default">OFF</button>
-                        <button class="btn btn-sm btn-primary active">ON</button>
-                    </div>
-                    Permanganate
-                </p>
-
-                <p class="btn-toolbar">
-                    <div class="btn-group btn-toggle">
-                        <button class="btn btn-sm btn-default">OFF</button>
-                        <button class="btn btn-sm btn-primary active">ON</button>
-                    </div>
-                    Phosphate
-                </p>
+                <br><br>
+                <div class="alert alert-danger">This area contains 30% more Heavy Metal than National Standard.</div>
+                <table class="table table-bordered"> 
+                  <tr>
+                    <td class="field-label col-md-4 active">
+                      <label>Address</label>
+                    </td>
+                    <td class="col-md-8">
+                      Value 1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="field-label active">
+                      <label>Location</label>
+                    </td>
+                    <td>
+                      Value 2
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="field-label active">
+                      <label>Heavy Metals</label>
+                    </td>
+                    <td>
+                      Value 3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="field-label active">
+                      <label>Nitrate</label>
+                    </td>
+                    <td>
+                      Value 3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="field-label active">
+                      <label>Permanganate</label>
+                    </td>
+                    <td>
+                      Value 3
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="field-label active">
+                      <label>Phosphate</label>
+                    </td>
+                    <td>
+                      Value 3
+                    </td>
+                  </tr>
+                </table>
             </div>
         </div>
 
@@ -166,7 +197,6 @@
 
     <div class="container">
         <hr>
-        <h3>Alert: This area contains 30% more Heavy Metal than National Standard.</h3>
     </div>
     <!-- /.container -->
 

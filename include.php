@@ -8,3 +8,4 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="https://jquery-csv.googlecode.com/files/jquery.csv-0.71.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/bootstrap-multiselect.js"></script>
