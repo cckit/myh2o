@@ -21,9 +21,6 @@ $(document).ready(function () {
 });
 
 function initialize() {
-
-  //alert("Initialize called");
-  
   markers = new Array(410);
   infowindows = new Array(410);
   var easy_drop = 'images/reddrop.png';
