@@ -54,7 +54,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <b>Area (m<sup>2</sup>)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="-20" data-slider-max="20" data-slider-step="1" data-slider-value="-14" data-slider-selection="after"data-slider-tooltip="show">
+                        <b>Area (km<sup>2</sup>)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="-14" data-slider-selection="after"data-slider-tooltip="show">
                     </div>
                     <div class="col-md-6 input-group btn-group">
                         <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
