@@ -12,6 +12,7 @@
     <!-- JavaScript and CSS -->
     <?php include 'include.php'; ?>
     <script src="js/map.js"></script>
+    <script src="js/load_data.js"></script>
     <script src="js/bootstrap-multiselect.js"></script>
     <script src="js/bootstrap-slider.js"></script>
 

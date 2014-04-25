@@ -6,13 +6,23 @@ var mapOptions = {
   center: myLatlng
 };
 
-var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+var map;
 var geocoder = new google.maps.Geocoder();
+
+$(document).ready(function () {
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    initialize();
+
+    $('#btnFindLocation').click(function(){
+        var address = $('#lblLocation')[0].value;
+        //console.log($('#lblLocation')[0].value);
+        codeAddress(address);
+    });
+});
 
 function initialize() {
 
-  // alert("Initialize called");
-  console.log(data);
+  alert("Initialize called");
 
   markers = new Array(410);
   infowindows = new Array(410);
