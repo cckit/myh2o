@@ -11,12 +11,18 @@ function connect($hostname, $username, $password, $database)
     return $link;
 }
 
-function query($link, $table, $longitude, $latitude, $width)
+function query($link, $table, $longitude, $latitude, $latitude_width_km, $longitude_width_km)
 {
-    $lng_min = $longitude - $width;
-    $lng_max = $longitude + $width;
-    $lat_min = $latitude - $width;
-    $lat_max = $latitude + $width;
+    if (is_null($latitude_width_km) || is_null($longitude_width_km)) {
+        $latitude_width_km = 500;
+        $longitude_width_km = 500;
+    }
+    $lng_per_km = 0.621371 / (69.11 * cos($longitude));
+    $lat_per_km = 1 /111;
+    $lng_min = $longitude - $longitude_width_km * $lng_per_km;
+    $lng_max = $longitude + $longitude_width_km * $lng_per_km;
+    $lat_min = $latitude - $latitude_width_km * $lat_per_km;
+    $lat_max = $latitude + $latitude_width_km * $lat_per_km;
 
     // Performing SQL query
     $query = "SELECT * FROM $table
@@ -56,7 +62,7 @@ function close_connection($link)
 function all_points()
 {
     $link = connect('localhost', 'root', '821015jiajia', 'myh2o');
-    $result = query($link, 'water_quality', 0, 0, 500);
+    $result = query($link, 'water_quality', 0, 0, 500, 500);
     return $result;
 }
 ?>
