@@ -15,7 +15,7 @@
     <script src="js/bootstrap-multiselect.js"></script>
     <script src="js/bootstrap-slider.js"></script>
 
-    <link href="css/map.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
 </head>
 
@@ -23,15 +23,11 @@
     <?php include 'theme/nav_fixed.php'; ?>
 
     <div class="container">
-
         <div class="row">
-
             <div class="col-lg-12">
                 <h1 class="page-header">Water Quality Map
-                    
                 </h1>
             </div>
-
         </div>
 
         <div class="row">
