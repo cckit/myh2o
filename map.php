@@ -12,7 +12,11 @@
     <!-- JavaScript and CSS -->
     <?php include 'include.php'; ?>
     <script src="js/map.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+
     <link href="css/map.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,18 +98,22 @@
                 </div>
                 <br>
 
-                <div class="input-group btn-group">
-                    <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
-                    <select class="multiselect btn-primary">
-                      <option value="HeavyMetals">Heavy Metals</option>
-                      <option value="Nitrate">Nitrate</option>
-                      <option value="Permanganate">Permanganate</option>
-                      <option value="Phosphate">Phosphate</option>
-                    </select>
+                <div class="row">
+                    <div class="col-md-6">
+                        <b>Area (m<sup>2</sup>)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="-20" data-slider-max="20" data-slider-step="1" data-slider-value="-14" data-slider-selection="after"data-slider-tooltip="show">
+                    </div>
+                    <div class="col-md-6 input-group btn-group">
+                        <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
+                        <select class="multiselect btn-primary">
+                          <option value="HeavyMetals">Heavy Metals</option>
+                          <option value="Nitrate">Nitrate</option>
+                          <option value="Permanganate">Permanganate</option>
+                          <option value="Phosphate">Phosphate</option>
+                        </select>  
+                    </div>
                 </div>
 
-
-                <br><br>
+                <br>
                 <div class="alert alert-danger">This area contains 30% more Heavy Metal than National Standard.</div>
                 <table class="table table-bordered"> 
                   <tr>
