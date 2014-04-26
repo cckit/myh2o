@@ -20,7 +20,10 @@ $(document).ready(function () {
     });
 });
 
-function initialize() {
+var initialize = function initialize(data, status, jqXHR) {
+  console.log(status);
+  console.log(data);
+  console.log(jqXHR);
   markers = new Array(410);
   infowindows = new Array(410);
   var easy_drop = 'images/reddrop.png';
@@ -120,9 +123,11 @@ function initialize() {
   }
 }
 
+
 function codeAddress(address) {
   geocoder.geocode({ 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
+      //console.log(results);
       map.setCenter(results[0].geometry.location);
       map.setZoom(12);
       // if(marker)
@@ -132,6 +137,17 @@ function codeAddress(address) {
           position: results[0].geometry.location,
           // draggable: true
       });
+
+      $.ajax({
+        url:"http://localhost/~snowbabyjia/myh2o_v2/query.php",
+        data: {
+            latitude: results[0].geometry.location.A,
+            longitude: results[0].geometry.location.k
+        },
+        success: initialize
+      });
+      //window.location.href = "http://localhost/~snowbabyjia/myh2o_v2/query.php?latitude=" + results[0].geometry.location.A+ "&longitude=" + results[0].geometry.location.k;
+      
       // google.maps.event.addListener(marker, "dragend", function() {
       //   document.getElementById('lat').value = marker.getPosition().lat();
       //   document.getElementById('lng').value = marker.getPosition().lng();
