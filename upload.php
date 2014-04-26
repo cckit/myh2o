@@ -26,16 +26,61 @@
             </div>
         </div>
 
-        <form action="insert.php" method="post">
-            Longitude: <input type="" name="longitude"><br><br>
-            Latitude: <input type="text" name="latitude"><br><br>
-            PH: <input type="text" name="ph"><br><br>
-            ammonium_nitrate: <input type="text" name="ammonium_nitrate"><br><br>
-            phosphate: <input type="text" name="phosphate"><br><br>
-            permanganate: <input type="text" name="permanganate"><br><br>
-            heavy_metal: <input type="text" name="heavy_metal"><br><br>
-            email: <input type="text" name="email"><br><br>
-            <input type="submit">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="longitude" class="col-sm-2 control-label">Longitude</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="longitude" name="longitude" placeholder="Longitude" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="latitude" class="col-sm-2 control-label">Latitude</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="latitude" name="latitude" placeholder="Latitude" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ph" class="col-sm-2 control-label">pH Value</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="ph" name="ph" placeholder="pH Value" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ammonium_nitrate" class="col-sm-2 control-label">Ammonium Nitrate</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="ammonium_nitrate" name="ammonium_nitrate" placeholder="Ammonium Nitrate" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phosphate" class="col-sm-2 control-label">Phosphate</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="phosphate" name="phosphate" placeholder="Phosphate" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="permanganate" class="col-sm-2 control-label">Permanganate</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="permanganate" name="permanganate" placeholder="Permanganate" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="heavy_metal" class="col-sm-2 control-label">Heavy metal</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control" id="heavy_metal" name="heavy_metal" placeholder="Heavy metal" step="any">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-4">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <!--<button type="submit" class="btn btn-default">Sign in</button>-->
+              <input type="submit" class="btn btn-primary">
+            </div>
+          </div>
         </form>
         <hr>
     </div>
