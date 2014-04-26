@@ -139,7 +139,7 @@ function codeAddress(address) {
       });
 
       $.ajax({
-        url:"http://localhost/~snowbabyjia/myh2o_v2/query.php",
+        url:"query.php",
         data: {
             latitude: results[0].geometry.location.A,
             longitude: results[0].geometry.location.k
