@@ -7,6 +7,7 @@
 
     <!-- Inlcuded files -->
 	<?php include('include.php'); ?>
+    <script src="js/home.js"></script>
 	<link href="css/home.css" rel="stylesheet">
 </head>
 <body>
@@ -87,15 +88,15 @@
             </div>
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="http://placehold.it/140x140">
-                <h2>You are not alone!</h2>
-                <p>78% worries about tap water safety, 90% says they know nothing about the water they drink according to a survey conducted by China Times. Are you one of them?</p>
+                <h2>It is that simple!</h2>
+                <p>Type in your address<br>Understand your water quality with a click</p>
                 <p><a class="btn btn-default" href="#">View details »</a>
                 </p>
             </div>
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="http://placehold.it/140x140">
-                <h2>It is that simple!</h2>
-                <p>Type in your address<br>You can understand your water quality with with a click of a button.</p>
+                <h2>Placeholder title</h2>
+                <p>Placeholder content</p>
                 <p><a class="btn btn-default" href="#">View details »</a>
                 </p>
             </div>
@@ -109,16 +110,16 @@
 
         <div class="featurette">
             <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-            <h2 class="featurette-heading">You are not alone!<span class="text-muted"></span></h2>
-            <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+            <h2 class="featurette-heading">YOU are not alone!<span class="text-muted"></span></h2>
+            <p class="lead">According to a survey conducted by China Times, <br>78% worries about tap water safety, <br>90% says they know nothing about the water they drink. <br>Are you one of them?</p>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="featurette">
             <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-            <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-            <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+            <h2 class="featurette-heading">Reliable & Updated?<span class="text-muted"> Yes!</span></h2>
+            <p class="lead">We only take data from credible sources. Thousands of data are collected from grassroot water testing campaigns, high-profile research and national water surveys. All the information presented here are constantly verified and updated. </p>
         </div>
 
         <hr class="featurette-divider">
