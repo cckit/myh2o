@@ -26,8 +26,8 @@
                 <img src="http://www.bootply.com/assets/example/bg_suburb.jpg" class="img-responsive">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Some Short Slogan</h1>
-                        <p>Short short introduction</p>
+                        <h1>How SAFE is your water?</h1>
+                        <p>MyH<sub>2</sub>O helps you understand your own water better</p>
                         <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small="">
                             <p></p>
                             <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
@@ -40,8 +40,8 @@
                 <img src="http://lorempixel.com/1500/600/abstract/1" class="img-responsive">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Changes to....</h1>
-                        <p>(How to change?)</p>
+                        <h1>Easy, Accessible Water Testing</h1>
+                        <p>Purchase rapid testing kit <br> Request professional laboratory testing</p>
                         <p><a class="btn btn-large btn-primary" href="#">Learn more</a>
                         </p>
                     </div>
@@ -51,9 +51,9 @@
                 <img src="http://placehold.it/1500X500" class="img-responsive">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Map</h1>
-                        <p>bababa</p>
-                        <p><a class="btn btn-large btn-primary" href="#">Live Map</a>
+                        <h1>Be the Change</h1>
+                        <p>Join our champaign and Educate people</p>
+                        <p><a class="btn btn-large btn-primary" href="#">Sign up</a>
                         </p>
                     </div>
                 </div>
@@ -80,22 +80,22 @@
         <div class="row">
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="http://placehold.it/140x140">
-                <h2>Mobile-first</h2>
-                <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
+                <h2>Reliable</h2>
+                <p>We only take data from credible sources.<br>All the information are constantly verified and updated.</p>
                 <p><a class="btn btn-default" href="#">View details »</a>
                 </p>
             </div>
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="http://placehold.it/140x140">
-                <h2>One Fluid Grid</h2>
-                <p>There is now just one percentage-based grid for Bootstrap 3. Customize for fixed widths.</p>
+                <h2>You are not alone!</h2>
+                <p>78% worries about tap water safety, 90% says they know nothing about the water they drink according to a survey conducted by China Times. Are you one of them?</p>
                 <p><a class="btn btn-default" href="#">View details »</a>
                 </p>
             </div>
             <div class="col-md-4 text-center">
                 <img class="img-circle" src="http://placehold.it/140x140">
-                <h2>LESS is More</h2>
-                <p>Improved support for mixins make the new Bootstrap 3 easier to customize.</p>
+                <h2>It is that simple!</h2>
+                <p>Type in your address<br>You can understand your water quality with with a click of a button.</p>
                 <p><a class="btn btn-default" href="#">View details »</a>
                 </p>
             </div>
@@ -109,7 +109,7 @@
 
         <div class="featurette">
             <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-            <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
+            <h2 class="featurette-heading">You are not alone!<span class="text-muted"></span></h2>
             <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
         </div>
 
