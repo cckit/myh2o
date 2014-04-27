@@ -7,11 +7,14 @@
 
     <!-- Inlcuded files -->
 	<?php include('include.php'); ?>
+    <script src="js/about.js"></script>
 	<link href="css/theme.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 </head>
 <body>
 
     <?php include 'theme/nav_fixed.php' ?>
+
     
     <div class="container">
         <div class="row">
@@ -20,6 +23,23 @@
                 </h1>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                        <nav role="navigation i">
+                            <ul class="nav nav-pills">
+                                <li><div class="photo"></div></li>
+                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
+                                <li><div class="photo" src="http://placehold.it/300x300"></li>
+                                <li><div class="photo show" src="http://placehold.it/300x300"></div></li>
+                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
+                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
+                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
+                            </ul>                                                 
+                        </nav>
+            </div>
+        </div>
+
         <p>
         <b>Charlene Ren</b> is the current director of MyH2O and manages the overall development strategy and social enterprise plan for the project. She’s a graduate student in Environmental Engineering at MIT, and has close connections with Chinese NGOs from her internship experience at CYCAN and Roots & Shoots, Beijing.
         </p>
