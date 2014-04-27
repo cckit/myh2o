@@ -54,7 +54,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <b>Area (km<sup>2</sup>)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="2" data-slider-max="100" data-slider-step="1" data-slider-value="10" data-slider-selection="after"data-slider-tooltip="show">
+                        <b>Area (km)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="2" data-slider-max="100" data-slider-step="1" data-slider-value="10" data-slider-selection="after"data-slider-tooltip="show">
                     </div>
                     <div class="col-md-6 input-group btn-group">
                         <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
@@ -68,30 +68,14 @@
                 </div>
 
                 <br>
-                <div class="alert alert-danger">This area contains 30% more Heavy Metal than National Standard.</div>
+                <div class="alert alert-danger">The score of the area: <b>40</b> out of 100. The water quality is <b>20%</b> below average.</div>
                 <table class="table table-bordered"> 
-                  <tr>
-                    <td class="field-label col-md-4 active">
-                      <label>Address</label>
-                    </td>
-                    <td class="col-md-8">
-                      Value 1
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="field-label active">
-                      <label>Location</label>
-                    </td>
-                    <td>
-                      Value 2
-                    </td>
-                  </tr>
                   <tr>
                     <td class="field-label active">
                       <label>Heavy Metals</label>
                     </td>
                     <td>
-                      Value 3
+                      <font color="red">150% over national standard</font>
                     </td>
                   </tr>
                   <tr>
@@ -99,7 +83,7 @@
                       <label>Nitrate</label>
                     </td>
                     <td>
-                      Value 3
+                      <font color="red">400% over national standard</font>
                     </td>
                   </tr>
                   <tr>
@@ -107,7 +91,7 @@
                       <label>Permanganate</label>
                     </td>
                     <td>
-                      Value 3
+                      <font color="orange">Medium</font>
                     </td>
                   </tr>
                   <tr>
@@ -115,7 +99,7 @@
                       <label>Phosphate</label>
                     </td>
                     <td>
-                      Value 3
+                      <font color="orange">Medium</font>
                     </td>
                   </tr>
                 </table>

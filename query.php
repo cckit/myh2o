@@ -18,16 +18,16 @@ function query($link, $table, $longitude, $latitude, $latitude_width_km, $longit
         $longitude_width_km = 5000;
     }
     // For debugging
-    $latitude_width_km = 5000;
-    $longitude_width_km = 5000;
+    // $latitude_width_km = 5000;
+    // $longitude_width_km = 5000;
 
-
+    $scale = 100;
     $lng_per_km = 0.621371 / (69.11 * cos($longitude));
     $lat_per_km = 1 /111;
-    $lng_min = $longitude - 500;//$longitude_width_km * $lng_per_km;
-    $lng_max = $longitude + 500;//$longitude_width_km * $lng_per_km;
-    $lat_min = $latitude - 500;//$latitude_width_km * $lat_per_km;
-    $lat_max = $latitude + 500;//$latitude_width_km * $lat_per_km;
+    $lng_min = $longitude - $scale*$longitude_width_km * $lng_per_km;
+    $lng_max = $longitude + $scale*$longitude_width_km * $lng_per_km;
+    $lat_min = $latitude - $scale*$latitude_width_km * $lat_per_km;
+    $lat_max = $latitude + $scale*$latitude_width_km * $lat_per_km;
 
     // Performing SQL query
     $query = "SELECT * FROM $table
