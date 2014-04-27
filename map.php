@@ -178,6 +178,7 @@
             echo '</script>';
         }
     ?>
+    <script src="js/droplet_icons.js" type "text/javascript"></script>
     <script src="js/load_data.js" type="text/javascript"></script>
     <script type="text/javascript">
         // Sorry for using global variables. I was having scope issues when passing local variables to initialize()
