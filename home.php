@@ -29,7 +29,10 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>How SAFE is your water?</h1>
-                        <p>MyH<sub>2</sub>O helps you understand your own water better</p>
+                        <p>
+                            MyH<sub>2</sub>O helps you understand your own water better<br>
+                            First online crowd-sourcing platform
+                        </p>
                         <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small="">
                             <p></p>
                             <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
