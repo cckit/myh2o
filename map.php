@@ -88,7 +88,7 @@
                       <label>Heavy Metals</label>
                     </td>
                     <td>
-                      <font color="red">150% over national standard</font>
+                      <font color="red">High Risk (150% over national standard)</font>
                     </td>
                   </tr>
                   <tr>
@@ -96,7 +96,7 @@
                       <label>Nitrate</label>
                     </td>
                     <td>
-                      <font color="red">400% over national standard</font>
+                      <font color="red">High Risk (400% over national standard)</font>
                     </td>
                   </tr>
                   <tr>
@@ -104,7 +104,7 @@
                       <label>Permanganate</label>
                     </td>
                     <td>
-                      <font color="orange">Medium</font>
+                      <font color="orange">Medium Risk</font>
                     </td>
                   </tr>
                   <tr>
@@ -112,7 +112,7 @@
                       <label>Phosphate</label>
                     </td>
                     <td>
-                      <font color="orange">Medium</font>
+                      <font color="orange">Medium Risk</font>
                     </td>
                   </tr>
                 </table>
