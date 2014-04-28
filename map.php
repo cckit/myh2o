@@ -54,7 +54,7 @@
 
             <div class="col-md-4">
                 <div class="input-group">
-                    <input type="text" id="lblLocation" class="form-control" placeholder="Search by Loaction" name="address">
+                    <input type="text" id="lblLocation" class="form-control" placeholder="Search by Location" name="address">
                     <span class="input-group-btn">
                     <button id="btnFindLocation" class="btn btn-primary" type="button" 
                         onclick="codeAddress(document.getElementById('lblLocation').value)">
@@ -66,7 +66,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <b>Area (km)&nbsp;</b><div id="defaultslide" class=".col-md-1"></div>
+                        <b>Area &nbsp;</b><div id="defaultslide" class=".col-md-1"></div>
 
                     </div>
                     <div class="col-md-6 input-group btn-group">

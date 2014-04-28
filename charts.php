@@ -31,8 +31,12 @@
 
         <div class="row">
             <!-- The Charts -->
-            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ammonium Nitrate Concentrations </h1>
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ammonium Nitrate Concentrations </h1><hr>
             <div id="chart_div" style="width: 900px; height: 500px;"></div>
+
+            <div style="height: 30px"></div>
+            <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Heavy Metal Concentrations </h1><hr>
+            <div id="metals_chart" style="width: 900px; height: 500px;"></div>
         </div>
 
         <!-- Useless Filler -->
