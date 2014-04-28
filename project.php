@@ -29,8 +29,22 @@
 		</p>
 		<br>
 		<p style="font-size:18px">
-			We believe 1 + 1 = 11. The passion, dedication and generosity of resources from our supporters and collaborators are crucial to make this happen:(insert all the logos)
+			We believe 1 + 1 = 11. The passion, dedication and generosity of resources from our supporters and collaborators are crucial to make this happen:
 		</p>
+        <blockquote>
+            <div class="row">
+                <div class="col-md-2"><b>Government</b></div>
+                <div class="col-md-10">Beijing Municipal Health Bureau</div>
+                <div class="col-md-12"></div>
+                <div class="col-md-2"><b>NGO</b></div>
+                <div class="col-md-10">China Youth Climate Action Network<br>
+            Alashan SEE Ecological Association<br>
+            Greenovation<br></div>
+                <div class="col-md-2"><b>Academia</b></div>
+                <div class="col-md-10">Tsinghua University, School of Environment<br>
+              Nankai University, College of Environmental Science and Engineering<br></div>
+            </div>
+        </blockquote>
         <hr class="featurette-divider">
 
         <!--<div class="featurette">
