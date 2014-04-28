@@ -1,5 +1,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 
