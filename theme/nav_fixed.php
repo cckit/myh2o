@@ -13,7 +13,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse" style="line-height: 1em;">
             <ul class="nav navbar-nav navbar">
-                <li><a href="project.php">Project</a>
+                <li><a href="project.php">About</a>
                 </li>
                 <li><a href="map.php">Live Map</a>
                 </li>
@@ -21,7 +21,7 @@
                 </li>
                 <li><a href="upload.php">Upload Data</a>
                 </li>
-                <li><a href="about.php">About us</a>
+                <li><a href="about.php">Team</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
