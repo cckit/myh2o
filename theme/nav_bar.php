@@ -18,7 +18,7 @@
                     </li>
                     <li><a href="map.php">Live Map</a>
                     </li>
-                    <li><a href="#">Charts</a>
+                    <li><a href="charts.php">Charts</a>
                     </li>
                     <li><a href="upload.php">Upload Data</a>
                     </li>
