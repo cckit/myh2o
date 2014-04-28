@@ -14,14 +14,8 @@
     <script src="js/map.js"></script>
     <script src="js/load_data.js"></script>
     <script src="js/bootstrap-multiselect.js"></script>
-    <script src="js/bootstrap-slider.js"></script>
-<!--    <script src="http://code.jquery.com/jquery-1.11.0.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
 
     <link href="css/theme.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" rel="stylesheet">
 
     <style>
         div.ui-slider-range.ui-widget-header {
