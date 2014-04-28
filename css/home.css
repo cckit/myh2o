@@ -11,6 +11,12 @@ body {
 	padding-bottom: 40px;
 	color: #5a5a5a;
 }
+
+.carousel-caption h1,p {
+    text-shadow:0 0 20px #000000;
+    text-outline: 2px 2px #ff0000;
+}
+
         /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
         /* Special class on .container surrounding .navbar, used for positioning it into place. */

@@ -39,7 +39,8 @@
                 </div>
             </div>
             <div class="item">
-                <img src="http://lorempixel.com/1500/600/abstract/1" class="img-responsive">
+                <img src="images/bg/bgC2.png">
+                <!--<img src="http://lorempixel.com/1500/600/abstract/1" class="img-responsive">-->
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>China’s Water Pollution</h1>
@@ -50,7 +51,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="http://placehold.it/1500X500" class="img-responsive">
+                <img src="images/bg/bgC3.png" class="img-responsive">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Be the Change</h1>
