@@ -20,31 +20,42 @@
                 </h1>
             </div>
         </div>
-        <p>
+        <p style="font-size:18px">
+			China has long been troubled by severe water contamination. According to the Ministry of Environmental Protection, 280 million people use unsafe drinking water. Half of the urban drinking water supplies do not meet national standards. Government is currently in a transition period to make water quality information more public, but most communities are still left in the dark about the quality of the water they are exposed to. 
+		</p>
+		<br>
+		<p style="font-size:18px">
+			"MyH2O" is created to help Chinese people understand better their drinking water and associated health risks. We gather credible water quality info from published research, government monitoring agencies and university labs. We stimulate local water testing campaigns by distributing affordable water quality testing kits to university students, NGOs and community volunteers. We aims to make water quality accessible to people at all age, and advocate for clean potable water for China with the power of crowd sourcing and community engagement.<br>
+		</p>
+		<br>
+		<p style="font-size:18px">
+			We believe 1 + 1 = 11. The passion, dedication and generosity of resources from our supporters and collaborators are crucial to make this happen:(insert all the logos)
+		</p>
+        <hr class="featurette-divider">
 
-		<b>Why MyH2O?</b>
-		</p>
-		<p>
-		China has long been troubled by water contamination. Continuous emissions from industry as well as heavy application of agricultural fertilizers and pesticides are the major contributors to the deteriorating water quality [1].
-		</p>
-		<p>
-		However, the government has been reluctant to publish water survey results and often presents the general public with manipulated, inconsistent information, leaving most communities in the dark about the quality of their rivers, lakes, groundwater and even drinking water. Inspired by how the independent test results of air quality in Beijing went viral on social media and eventually pushed the government to take a stand against air pollution [2], we hope to carry out a similar scheme for water pollution.
-		</p>
-		<p>
-		With this picture in mind, we decided to develop "MyH2O" as one of the first online crowd-sourcing platforms on water issues in China. We plan to distribute cheap water quality testing kits and testing manuals to university students, NGOs and community volunteers. These participants can be then trained to test their local water quality and upload their location, photos of water bodies and testing results to a common mapping database through computer-based and mobile app platforms that are also connected to social media including Chinese facebook and twitter.
-		</p>
-		<p>
-		[1] China's water issue: http://tinyurl.com/mt2yzb9
+        <!--<div class="featurette">
+            <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+            <h2 class="featurette-heading">YOU are not alone!<span class="text-muted"></span></h2>
+            <p class="lead">According to a survey conducted by China Times, <br>78% worries about tap water safety, <br>90% says they know nothing about the water they drink. <br>Are you one of them?</p>
+        </div>
 
-		[2] The inspirational case for China's air quality: http://tinyurl.com/lkurywp
-		</p>
-		<p>
+        <hr class="featurette-divider">
 
-		<b>Impact</b>
-		</p>
-		<p>
-		Create a reliable mapping database of water quality data in China, as well as an interactive social platform for water info sharing that engages at least 1000 people in two cities.
-		</p>
+        <div class="featurette">
+            <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+            <h2 class="featurette-heading">Reliable & Updated?<span class="text-muted"> Yes!</span></h2>
+            <p class="lead">We only take data from credible sources. Thousands of data are collected from grassroot water testing campaigns, high-profile research and national water surveys. All the information presented here are constantly verified and updated. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+            <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+            <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+        </div>
+
+        <hr class="featurette-divider">-->
 	</div>
 </body>
 </html>

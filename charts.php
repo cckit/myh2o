@@ -11,16 +11,11 @@
 
     <!-- JavaScript and CSS -->
     <?php include 'include.php'; ?>
-    <script src="js/bootstrap-multiselect.js"></script>
-    <script src="js/bootstrap-slider.js"></script>
 
-    <script type='text/javascript' src="js/jquery-1.10.2.min.js"></script>
-    <script type='text/javascript' src="js/jquery-csv-0.71.js"></script>
     <script type='text/javascript' src='https://www.google.com/jsapi'></script>
     <script type='text/javascript' src='js/heatmap.js'></script>
-
+    
     <link href="css/theme.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
 </head>
 
 <body>

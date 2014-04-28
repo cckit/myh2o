@@ -24,47 +24,61 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                        <nav role="navigation i">
-                            <ul class="nav nav-pills">
-                                <li><div class="photo"></div></li>
-                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
-                                <li><div class="photo" src="http://placehold.it/300x300"></li>
-                                <li><div class="photo show" src="http://placehold.it/300x300"></div></li>
-                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
-                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
-                                <li><div class="photo" src="http://placehold.it/300x300"></div></li>
-                            </ul>                                                 
-                        </nav>
+        <div class="visible-md visible-lg">
+            <div = style="display:none;">
+                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:160px;z-index:1">
+                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:168px;z-index:1">
+                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:285px;z-index:1">
+                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:297px;z-index:1">
+           </div>
+            <nav class="text-center" role="navigation i">
+                <ul id="image-bar" class="nav nav-pills" style="display: inline-block; margin:0;padding:0;">
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Chang.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Mengqi.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/SiyiZ.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo show img-thumbnail" style="background-image: url('images/team/Charlene.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Tommy.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/JiaJia.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Jonathan.jpg')"></div>
+                </ul>                                                 
+            </nav>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="member-detail" class="well">
+                        <h1><span class="member-name">Charlene Ren</span><br><small><span class="member-role">Director of MyH<sub>2</sub>O</span><br>
+                        <span class="member-occupation">Graduate student in Environmental Engineering at MIT</span></small></h1>
+                        <div class="row">
+                            <span class="member-about col-md-11">
+                                Charlene manages the overall development strategy and social enterprise plan for the project. She has close connections with Chinese NGOs from her internship experience at CYCAN and Roots &amp; Shoots, Beijing.
+                            </span>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </div>
 
-        <p>
-        <b>Charlene Ren</b> is the current director of MyH2O and manages the overall development strategy and social enterprise plan for the project. She’s a graduate student in Environmental Engineering at MIT, and has close connections with Chinese NGOs from her internship experience at CYCAN and Roots & Shoots, Beijing.
-        </p>
-        <p>
-        <b>Siyi Zhang</b> is a MIT-Wellesley dual degree student majoring in Environmental Engineering and Geosciences. Having worked in multiple US-China organizations in green energy and climate change advocacy, she is responsible for reaching out to Chinese water experts, Chinese universities, and local water testing labs for potential collaboration and data collection.
-        </p>
-        <p>
-        <b>Fangyuan Hong</b> studies environmental studies and mathematics at Mount Holyoke College. She is responsible for water testing kit development and field water research. With her background in mathematics and statistics, she also carries data analysis and visualization for the collected water quality data.
-        </p>
-        <p>
-        <b>Mengqi Shi</b> is responsible for MyH2O’s research in China’s water quality, and prioritizes the water contaminants of the project’s concern. She currently studies biology and environmental policy at Sewanee-the University of the South, with a background in aquatic analytical chemistry. She’s also currently the International Director at CYCAN, and serves as a liaison between MyH2O and CYCAN local team.
-        </p>
-        <p>
-        <b>Jonathan Uesato</b> is currently studying Math and Computer Science at MIT. He has a strong quantitative and programming background, and and is currently conducting data analysis research with the MIT Media Lab. He serves as the webmaster and mobile app developer for MyH2O’s online platform.
-        </p>
-        <p>
-        <b>Jiajia Zhao</b> is currently studying Computer Science at MIT. She is passionate about public health and water safety in China. She will be working on implementing our online and mobile platform.
-        </p>
-        <p>
-        <b>Tommy Chan</b> introduction?
-        </p>
-        <p>
-        Special Thanks to support from China Youth Climate Action Network's international team for their publicity efforts - Shiqi Lin, Xinlei Ke and Dian Yu.
-
-		</p>
+        <div class="row visible-xs visible-sm">
+            <ul class="nav nav-pills" style="display: inline-block; margin:0; padding:0; text-center">
+                <li style="margin: 0;">
+                    <div class="photo show img-thumbnail"></div>                    
+                    <div class="well">
+                        <h1>Charlene Ren<br>
+                            <small>
+                                Director of MyH<sub>2</sub>O<br>
+                                Graduate student in Environmental Engineering at MIT
+                            </small>
+                        </h1>
+                        <p>Charlene manages the overall development strategy and social enterprise plan for the project. She has close connections with Chinese NGOs from her internship experience at CYCAN and Roots & Shoots, Beijing.</p>
+                    </div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
+            </ul> 
+        </div>
 	</div>
 </body>
 </html>
