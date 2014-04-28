@@ -55,8 +55,8 @@ var content = {
         },
         {
             "name": "Siyi Zhang",
-            "role": "Researcher",
-            "occupation": "Environmental Engineering & Geosciences student at MIT-Wellesley",
+            "role": "Public Relation Manager",
+            "occupation": "Environmental Engineering student at MIT",
             "about": "Having worked in multiple US-China organizations in green energy and climate change advocacy, Siyi is responsible for reaching out to Chinese water experts, Chinese universities, and local water testing labs for potential collaboration and data collection."
         },
         {
