@@ -17,7 +17,13 @@ def lookup(lat, lon):
         for code in data['codes']:
             if code['type'] == 'ISO3166-2':
                 subdiv = code['code']
-        return 'CN-' + str(subdiv)
+
+        if 'adminName1' not in data:
+            print "No admin name"
+            return None
+
+        name = data['adminName1']
+        return ('CN-' + str(subdiv), name)
  
     return None
 
@@ -31,6 +37,8 @@ with open('greenovation.csv', 'rb') as csvfile:
     firstline = True
     for row in rows:
         if firstline:
+            row.append('region_code')
+            row.append('region_name')
             f.write(', '.join(row))
             f.write('\n')
             firstline = False
@@ -40,6 +48,7 @@ with open('greenovation.csv', 'rb') as csvfile:
         lng = row[0]
         print lookup(lat,lng)
         if lookup(lat,lng) != None:
-            row.append(lookup(lat,lng))
+            row.append(lookup(lat,lng)[0])
+            row.append(lookup(lat,lng)[1])
             f.write(', '.join(row))
             f.write('\n')
