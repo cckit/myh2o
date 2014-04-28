@@ -15,9 +15,21 @@
     <!-- <script src="js/load_data.js"></script> -->
     <script src="js/bootstrap-multiselect.js"></script>
     <script src="js/bootstrap-slider.js"></script>
+<!--    <script src="http://code.jquery.com/jquery-1.11.0.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
 
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" rel="stylesheet">
+
+    <style>
+        div.ui-slider-range.ui-widget-header {
+    background: #0000ff;
+}
+    </style>
+
+
 </head>
 
 <body>
@@ -54,7 +66,8 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <b>Area (km)&nbsp;</b><input type="text" class="slider" value="" data-slider-min="2" data-slider-max="100" data-slider-step="1" data-slider-value="10" data-slider-selection="after"data-slider-tooltip="show">
+                        <b>Area (km)&nbsp;</b><div id="defaultslide" class=".col-md-1"></div>
+
                     </div>
                     <div class="col-md-6 input-group btn-group">
                         <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>

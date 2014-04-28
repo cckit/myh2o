@@ -20,6 +20,20 @@ $(document).ready(function () {
     });
 });
 
+// Update with slider value
+$(function(){
+  $('#defaultslide').slider({ 
+    max: 21,
+    min: 0,
+    value: 4,
+    slide: function(e,ui) {
+      map.setZoom(ui.value);
+      // $('#currentval').html(ui.value);
+    }
+  });
+
+});
+
 var initialize = function initialize() {
   // console.log(status);
   // console.log(data);
