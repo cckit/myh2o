@@ -12,7 +12,7 @@ body {
 	color: #5a5a5a;
 }
 
-.carousel-caption h1,p {
+.carousel-caption h1,.carousel-caption p {
     text-shadow:0 0 20px #000000;
     text-outline: 2px 2px #ff0000;
 }
