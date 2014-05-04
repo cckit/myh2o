@@ -43,9 +43,9 @@ var content = {
     "members": [
         {
             "name": "Chang Liu",
-            "role": "Researcher",
-            "occupation": "Student",
-            "about": ""
+            "role": "Treasurer & Researcher",
+            "occupation": "Government & Economics student at Franklin & Marshall College",
+            "about": "Chang is very passionate about environmental issues and has participated in various environment-related activities. He has developed connecitons with environment department officers in the British Embassy in China, and he is responsible for fundraising and other finance-related work in the team."
         },
         {
             "name": "Mengqi Shi",
