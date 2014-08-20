@@ -14,7 +14,9 @@
     <script src="js/map.js"></script>
     <script src="js/load_data.js"></script>
     <script src="js/bootstrap-multiselect.js"></script>
-
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSmU1lWBokfpznsFnsC63XBr"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
     <link href="css/theme.css" rel="stylesheet">
 
     <style>
@@ -82,7 +84,7 @@
                       <label>Heavy Metals</label>
                     </td>
                     <td>
-                      <font color="red">High Risk (150% over national standard)</font>
+                      <font color="red" id="heavy-metal-display">High Risk (150% over national standard)</font>
                     </td>
                   </tr>
                   <tr>
@@ -162,12 +164,13 @@
         include 'query.php'; 
         $result = all_points();
         // echo <h1> . $result . </h1>;
-        while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+       
+	echo '<script type="text/javascript">';
+	while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
             // Sorry this is possibly the ugliest code I've ever written but it works!
-            echo '<script type="text/javascript">';
             echo 'data.push(' . json_encode($line) . ');';
-            echo '</script>';
         }
+	echo '</script>';
     ?>
     <script src="js/droplet_icons.js" type "text/javascript"></script>
     <script src="js/load_data.js" type="text/javascript"></script>

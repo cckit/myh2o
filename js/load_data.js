@@ -7,10 +7,30 @@ var mapOptions = {
 };
 
 var map;
+var map_baidu;
 var geocoder = new google.maps.Geocoder();
+var geocoder_baidu;
+var ac;
 
 $(document).ready(function () {
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	map_baidu = new BMap.Map("map-canvas");
+	map_baidu.centerAndZoom("中國", 4);
+	map_baidu.addControl(new BMap.NavigationControl());
+	map_baidu.addControl(new BMap.ScaleControl());
+	map_baidu.addControl(new BMap.OverviewMapControl());
+	map_baidu.enableScrollWheelZoom();
+
+	geocoder_baidu = new BMap.Geocoder();
+	ac = new BMap.Autocomplete({
+		"input": "lblLocation",
+		"location": map_baidu
+	});
+
+	ac.addEventListener("onconfirm", function(e) {
+		$('#btnFindLocation').click();
+	});
+
+    //map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     initialize();
 
     $('#btnFindLocation').click(function(){
@@ -27,7 +47,7 @@ $(function(){
     min: 0,
     value: 4,
     slide: function(e,ui) {
-      map.setZoom(ui.value);
+      map_baidu.setZoom(ui.value);
       // $('#currentval').html(ui.value);
     }
   });
@@ -73,13 +93,19 @@ var initialize = function initialize() {
       var droplet = red_drop;
     }
 
-    var pos = new google.maps.LatLng(+(cur['Latitude']), +(cur['Longitude']));
+    /*var pos = new google.maps.LatLng(+(cur['Latitude']), +(cur['Longitude']));
     markers[i] = new google.maps.Marker({
       position : pos,
       map : map,
       icon : droplet,
       title : 'Water Quality Test'
-    });
+    });*/
+
+	var pos_baidu = new BMap.Point(+(cur['Longitude']), +(cur['Latitude']));
+	var myIcon = new BMap.Icon(droplet.url, new BMap.Size(35, 50));
+	myIcon.imageSize = new BMap.Size(14, 20);
+	markers[i] = new BMap.Marker(pos_baidu,{icon:myIcon});
+	//map_baidu.addOverlay(markers[i]);
 
     var content = '<div id="content">'+
     '<div id="siteNotice">'+'</div>'+
@@ -92,7 +118,7 @@ var initialize = function initialize() {
     '</div>'+ 
     '</div>';
 
-    infowindows[i] = new google.maps.InfoWindow({
+    /*infowindows[i] = new google.maps.InfoWindow({
       content : content,
     });
 
@@ -104,13 +130,25 @@ var initialize = function initialize() {
         infowindows[ind].open(map, markers[ind]);
         curWindow = infowindows[ind];
       });
-    }(markers[i]));
+    }(markers[i]));*/
+
+	var infoWindow_baidu = new BMap.InfoWindow(content);
+	markers[i].addEventListener("click", function(){this.openInfoWindow(infoWindow_baidu);});
   }
+  var markerClusterer = new BMapLib.MarkerClusterer(map_baidu, {markers:markers});
 }
 
 
 function codeAddress(address) {
-  geocoder.geocode({ 'address': address}, function(results, status) {
+	
+	geocoder_baidu.getPoint(address, function(point){
+		if(point){
+			map_baidu.centerAndZoom(point, 16);
+			map_baidu.addOverlay(new BMap.Marker(point));
+		}		
+	});
+
+  /*geocoder.geocode({ 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       //console.log(results);
       map.setCenter(results[0].geometry.location);
@@ -142,5 +180,5 @@ function codeAddress(address) {
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
-  });
+  });*/
 }
