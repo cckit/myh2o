@@ -7,8 +7,8 @@
 
     <!-- Inlcuded files -->
 	<?php include('include.php'); ?>
-    <script src="js/home.js"></script>
-	<link href="css/home.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+	<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
     <?php include('theme/nav_bar.php'); ?>

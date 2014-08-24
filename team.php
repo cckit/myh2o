@@ -7,9 +7,9 @@
 
     <!-- Inlcuded files -->
 	<?php include('include.php'); ?>
-    <script src="js/about.js"></script>
+    <script src="js/team.js"></script>
 	<link href="css/theme.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
+    <link href="css/team.css" rel="stylesheet">
 </head>
 <body>
 
