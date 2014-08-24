@@ -38,7 +38,7 @@
                     <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/SiyiZ.jpg')"></div>
                     <li style="margin: 0;"><div class="photo show img-thumbnail" style="background-image: url('images/team/Charlene.jpg')"></div>
                     <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Tommy.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/JiaJia.jpg')"></div>
+                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Jiajia.jpg')"></div>
                     <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Jonathan.jpg')"></div>
                 </ul>                                                 
             </nav>

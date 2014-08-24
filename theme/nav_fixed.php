@@ -21,7 +21,7 @@
                 </li>
                 <li><a href="upload.php">Upload Data</a>
                 </li>
-                <li><a href="about.php">Team</a>
+                <li><a href="team.php">Team</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
