@@ -7,78 +7,69 @@
 
     <!-- Inlcuded files -->
 	<?php include('include.php'); ?>
-    <script src="js/about.js"></script>
 	<link href="css/theme.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
 </head>
 <body>
 
     <?php include 'theme/nav_fixed.php' ?>
 
-    
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header"> Who We Are
+                <h1 class="page-header"> Project Introduction
                 </h1>
             </div>
         </div>
-
-        <div class="visible-md visible-lg">
-            <div = style="display:none;">
-                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:160px;z-index:1">
-                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:168px;z-index:1">
-                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:285px;z-index:1">
-                <hr class="featurette-divider" style="position:absolute;left:50px;right:50px;top:297px;z-index:1">
-           </div>
-            <nav class="text-center" role="navigation i">
-                <ul id="image-bar" class="nav nav-pills" style="display: inline-block; margin:0;padding:0;">
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Chang.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Mengqi.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/SiyiZ.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo show img-thumbnail" style="background-image: url('images/team/Charlene.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Tommy.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/JiaJia.jpg')"></div>
-                    <li style="margin: 0;"><div class="photo img-thumbnail" style="background-image: url('images/team/Jonathan.jpg')"></div>
-                </ul>                                                 
-            </nav>
-
+        <p style="font-size:18px">
+			China has long been troubled by severe water contamination. According to the Ministry of Environmental Protection, 280 million people use unsafe drinking water. Half of the urban drinking water supplies do not meet national standards. Government is currently in a transition period to make water quality information more public, but most communities are still left in the dark about the quality of the water they are exposed to. 
+		</p>
+		<br>
+		<p style="font-size:18px">
+			"MyH2O" is created to help Chinese people understand better their drinking water and associated health risks. We gather credible water quality info from published research, government monitoring agencies and university labs. We stimulate local water testing campaigns by distributing affordable water quality testing kits to university students, NGOs and community volunteers. We aims to make water quality accessible to people at all age, and advocate for clean potable water for China with the power of crowd sourcing and community engagement.<br>
+		</p>
+		<br>
+		<p style="font-size:18px">
+			We believe 1 + 1 = 11. The passion, dedication and generosity of resources from our supporters and collaborators are crucial to make this happen:
+		</p>
+        <blockquote>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div id="member-detail" class="well">
-                        <h1><span class="member-name">Charlene Ren</span><br><small><span class="member-role">Director of MyH<sub>2</sub>O</span><br>
-                        <span class="member-occupation">Graduate student in Environmental Engineering at MIT</span></small></h1>
-                        <div class="row">
-                            <span class="member-about col-md-11">
-                                Charlene manages the overall development strategy and social enterprise plan for the project. She has close connections with Chinese NGOs from her internship experience at CYCAN and Roots &amp; Shoots, Beijing.
-                            </span>
-                        </div>
-                    </div>
-                 </div>
+                <div class="col-md-2"><b>Government</b></div>
+                <div class="col-md-10">Beijing Municipal Health Bureau</div>
+                <div class="col-md-12"></div>
+                <div class="col-md-2"><b>NGO</b></div>
+                <div class="col-md-10">China Youth Climate Action Network<br>
+            Alashan SEE Ecological Association<br>
+            Greenovation<br></div>
+                <div class="col-md-2"><b>Academia</b></div>
+                <div class="col-md-10">Tsinghua University, School of Environment<br>
+              Nankai University, College of Environmental Science and Engineering<br></div>
             </div>
+        </blockquote>
+        <hr class="featurette-divider">
+
+        <!--<div class="featurette">
+            <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+            <h2 class="featurette-heading">YOU are not alone!<span class="text-muted"></span></h2>
+            <p class="lead">According to a survey conducted by China Times, <br>78% worries about tap water safety, <br>90% says they know nothing about the water they drink. <br>Are you one of them?</p>
         </div>
 
-        <div class="row visible-xs visible-sm">
-            <ul class="nav nav-pills" style="display: inline-block; margin:0; padding:0; text-center">
-                <li style="margin: 0;">
-                    <div class="photo show img-thumbnail"></div>                    
-                    <div class="well">
-                        <h1>Charlene Ren<br>
-                            <small>
-                                Director of MyH<sub>2</sub>O<br>
-                                Graduate student in Environmental Engineering at MIT
-                            </small>
-                        </h1>
-                        <p>Charlene manages the overall development strategy and social enterprise plan for the project. She has close connections with Chinese NGOs from her internship experience at CYCAN and Roots & Shoots, Beijing.</p>
-                    </div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-                <li style="margin: 0;"><div class="photo show img-thumbnail"></div>
-            </ul> 
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+            <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+            <h2 class="featurette-heading">Reliable & Updated?<span class="text-muted"> Yes!</span></h2>
+            <p class="lead">We only take data from credible sources. Thousands of data are collected from grassroot water testing campaigns, high-profile research and national water surveys. All the information presented here are constantly verified and updated. </p>
         </div>
+
+        <hr class="featurette-divider">
+
+        <div class="featurette">
+            <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+            <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+        </div>
+
+        <hr class="featurette-divider">-->
 	</div>
 </body>
 </html>
