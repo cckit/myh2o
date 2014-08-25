@@ -133,9 +133,11 @@ var initialize = function initialize() {
     }(markers[i]));*/
 
 	var infoWindow_baidu = new BMap.InfoWindow(content);
-	markers[i].addEventListener("click", function(){this.openInfoWindow(infoWindow_baidu);});
+	markers[i].addEventListener("click", function(){
+      this.openInfoWindow(infoWindow_baidu);
+      var markerClusterer = new BMapLib.MarkerClusterer(map_baidu, {markers:markers});
+    });
   }
-  var markerClusterer = new BMapLib.MarkerClusterer(map_baidu, {markers:markers});
 }
 
 
