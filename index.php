@@ -12,7 +12,7 @@
         <script src="js/index.js"></script>
     </head>
     <body>
-        <?php include('theme/nav_bar.php'); ?>
+        <?php echo file_get_contents('theme/nav_bar.php') ?>
         <!-- Carousel
             ================================================== -->
         <div id="myCarousel" class="carousel slide">
