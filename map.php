@@ -19,7 +19,23 @@
         <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSmU1lWBokfpznsFnsC63XBr"></script>
         <script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
         <script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
-        <script src="js/map.js"></script>
+        <script type="text/javascript">
+            var areaSliderIndex = 0;
+
+            $(document).ready(function() {
+                $('.multiselect').multiselect();
+                $('.slider').slider().on('slide', function(ev){
+                    areaSliderIndex = ev.value;
+                });
+
+                $('#lblLocation').keypress(function(e){
+                    if(e.which == 13) {
+                        alert('You pressed enter!');
+                        $('#btnFindLocation').click();
+                    }
+                });
+            });
+        </script>
         <script src="js/load_data.js"></script>
         <style>
             div.ui-slider-range.ui-widget-header {
