@@ -9,7 +9,13 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="asset/lib/js/jquery-1.11.1.min.js"></script>
         <script src="asset/lib/js/bootstrap-3.1.1.min.js"></script>
-        <script src="js/index.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel').carousel({
+                  interval: 10000
+                });
+            });
+        </script>
     </head>
     <body>
         <?php echo file_get_contents('theme/nav_bar.php') ?>
