@@ -12,7 +12,7 @@
         <script src="asset/lib/js/bootstrap-3.1.1.min.js"></script>
     </head>
     <body>
-        <?php include 'theme/nav_fixed.php' ?>
+        <?php echo file_get_contents('theme/nav_fixed.php') ?>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
