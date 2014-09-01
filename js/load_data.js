@@ -14,7 +14,9 @@ var ac;
 
 $(document).ready(function () {
 	map_baidu = new BMap.Map("map-canvas");
-	map_baidu.centerAndZoom("中國", 4);
+	var point = new BMap.Point(104.114129,37.550339);
+  map_baidu.centerAndZoom(point, 4);
+
 	map_baidu.addControl(new BMap.NavigationControl());
 	map_baidu.addControl(new BMap.ScaleControl());
 	map_baidu.addControl(new BMap.OverviewMapControl());

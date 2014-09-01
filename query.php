@@ -4,7 +4,7 @@ function connect($hostname, $username, $password, $database)
 {
     $link = mysqli_connect($hostname, $username, $password, $database);
     if (mysqli_connect_errno()) {
-        printf("Connect failed: %s\n", mysqli_connect_error());
+        //printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
 
@@ -78,12 +78,12 @@ $longitude_width_km = $_GET['longitude_width_km'];
 $latitude_width_km = $_GET['latitude_width_km'];
 $result = all_points();
 // echo <h1> . $result . </h1>;
-echo "hahahahahaahahahahahahahahahahahahahahahahahaha";
+//echo "hahahahahaahahahahahahahahahahahahahahahahahaha";
 // echo $result;
 // echo $latitude;
 
 while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-    echo json_encode($line); 
+    //echo json_encode($line); 
     // echo "hahahahahaahahahahahahahahahahahahahahahahahaha";
 }
 
