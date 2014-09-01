@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="asset/lib/css/bootstrap-3.2.0.min.css" />
+        <link rel="stylesheet" href="asset/lib/css/bootstrap-3.1.1.min.css" />
         <link rel="stylesheet" href="css/index.css">
         <script src="asset/lib/js/jquery-1.11.1.min.js"></script>
-        <script src="asset/lib/js/bootstrap-3.2.0.min.js"></script>
+        <script src="asset/lib/js/bootstrap-3.1.1.min.js"></script>
         <script src="js/index.js"></script>
     </head>
     <body>
