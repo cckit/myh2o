@@ -14,7 +14,7 @@
         <script src="asset/lib/js/jquery-1.11.1.min.js"></script>
         <script src="asset/lib/js/jquery-ui-1.11.1.min.js"></script>
         <script src="asset/lib/js/bootstrap-3.2.0.min.js"></script>
-        <script src="js/bootstrap-multiselect.js"></script>
+        <script src="asset/lib/js/bootstrap-multiselect.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSmU1lWBokfpznsFnsC63XBr"></script>
         <script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
