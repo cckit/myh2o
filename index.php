@@ -18,7 +18,7 @@
         </script>
     </head>
     <body>
-        <?php echo file_get_contents('theme/nav_bar.php') ?>
+        <?php echo file_get_contents('theme/nav_fixed.php') ?>
         <!-- Carousel
             ================================================== -->
         <div id="myCarousel" class="carousel slide">
@@ -41,7 +41,7 @@
                             </p>
                             <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small="">
                             <p></p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
+                            <p><a class="btn btn-lg btn-primary" href="#" style="visibility:hidden">Learn More</a>
                             </p>
                             </pthis>
                         </div>
@@ -54,7 +54,7 @@
                         <div class="carousel-caption">
                             <h1>China’s Water Pollution</h1>
                             <p>280 million people use unsafe drinking water<br>Half of the urban drinking water supplies do not meet national standards</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
+                            <p><a class="btn btn-lg btn-primary" href="#" style="visibility:hidden">Learn More</a>
                             </p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="carousel-caption">
                             <h1>Be the Change</h1>
                             <p>Join our champaign and Educate people</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up</a>
+                            <p><a style="visibility:hidden" class="btn btn-lg btn-primary" href="#">Sign up</a>
                             </p>
                         </div>
                     </div>
@@ -91,21 +91,21 @@
                     <!--<img class="img-feature img-circle" src="http://placehold.it/140x140">-->
                     <h2>Credible Sources</h2>
                     <p>Thousands of entries and still growing. <br>Constantly verified and updated.</p>
-                    <p><a class="btn btn-default" href="#">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="#">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="img-feature" style="background-image: url('images/bg/bgFeature2.png')"></div>
                     <h2>Interactive Map</h2>
                     <p>Type in your address<br>Understand your water quality with a click</p>
-                    <p><a class="btn btn-default" href="map.php">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="map.php">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="img-feature" style="background-image: url('images/bg/bgFeature3.jpg')"></div>
                     <h2>Easy Water Testing</h2>
                     <p>Purchase a rapid water testing kit or<br>Request a professional laboratory testing</p>
-                    <p><a class="btn btn-default" href="#">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="#">View details »</a>
                     </p>
                 </div>
             </div>
