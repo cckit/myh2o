@@ -19,6 +19,8 @@
                 </li>
                 <li><a href="team.php">Team</a>
                 </li>
+                <li><a href="contact.php">Contact us</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

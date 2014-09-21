@@ -1,180 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>MyH2O - Water Quality Map</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="asset/lib/css/jquery-ui-1.11.1.min.css" />
-        <link rel="stylesheet" href="asset/lib/css/bootstrap-3.1.1.min.css" />
-        <link href="css/theme.css" rel="stylesheet">
-        <script src="asset/lib/js/jquery-1.11.1.min.js"></script>
-        <script src="asset/lib/js/jquery-ui-1.11.1.min.js"></script>
-        <script src="asset/lib/js/bootstrap-3.1.1.min.js"></script>
-        <script src="asset/lib/js/bootstrap-multiselect.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NSmU1lWBokfpznsFnsC63XBr"></script>
-        <script type="text/javascript" src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
-        <script type="text/javascript" src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
-        <script type="text/javascript">
-            var areaSliderIndex = 0;
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
-            $(document).ready(function() {
-                $('.multiselect').multiselect();
-                $('.slider').slider().on('slide', function(ev){
-                    areaSliderIndex = ev.value;
-                });
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 14 June 2007), see www.w3.org">
 
-                $('#lblLocation').keypress(function(e){
-                    if(e.which == 13) {
-                        alert('You pressed enter!');
-                        $('#btnFindLocation').click();
-                    }
-                });
-            });
-        </script>
-        <script src="js/load_data.js"></script>
-        <style>
-            div.ui-slider-range.ui-widget-header {
-            background: #0000ff;
-            }
-        </style>
-    </head>
-    <body>
-        <?php echo file_get_contents('theme/nav_fixed.php') ?>
-        <div class="container">
+  <title>MyH2O - Map</title>
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="content-type" content=
+  "text/html; charset=utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href=
+  "asset/lib/css/bootstrap-3.1.1.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <script src="asset/lib/js/jquery-1.11.1.min.js" type=
+  "text/javascript">
+</script>
+  <script src="asset/lib/js/bootstrap-3.1.1.min.js" type=
+  "text/javascript">
+</script>
+</head>
+
+<body>
+  <?php echo file_get_contents('theme/nav_fixed.php') ?>
+
+  <div class="container">
+    <div class="row" style="margin-top: 20px">
+      <div class="col-md-1"><img style=
+      "width: 300px; height: 300px;" src="images/logo.png"></div>
+
+      <div class="col-md-6 col-md-offset-3">
+        <h1>We are coming soon!</h1>
+
+        <div class="well">
+          <!-- Begin MailChimp Signup Form -->
+
+          <div class="container marketing">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Water Quality Map
-                    </h1>
-                </div>
+              <div class=
+              "col-md-5 col-sm-6">
+                <form role="form" name="mc-embedded-subscribe-form"
+                action=
+                "//MyH2O.us8.list-manage.com/subscribe/post?u=d42c325e70acd0bf473ef02c3&amp;id=93a9796420"
+                method="post" class="validate" target="_blank" id=
+                "mc-embedded-subscribe-form">
+                  <p style=
+                  "font-size: 1.4em; font-weight: bold;">Sign up to
+                  receive updates 
+                  from MyH2O</p>
+
+                  <div class="form-group has-feedback">
+                    <input type="email" name="EMAIL" class=
+                    "form-control" id="mce-EMAIL" placeholder=
+                    "Email" required="">
+                  </div>
+
+                  <div class="form-group has-feedback">
+                    <input type="text" value="" name="FNAME" class=
+                    "form-control" id="mce-FNAME" placeholder=
+                    "First name">
+                  </div>
+
+                  <div class="form-group has-feedback">
+                    <input type="text" value="" name="LNAME" class=
+                    "form-control" id="mce-LNAME" placeholder=
+                    "Last name">
+                  </div><strong>What language you
+                  want?</strong><br>
+
+                  <div class="radio-inline">
+                    <label><input type="radio" name="group[4597]"
+                    id="mce-group[4597]-4597-0" value="1" checked
+                    >English</label>
+                  </div>
+
+                  <div class="radio-inline">
+                    <label><input type="radio" name="group[4597]"
+                    id="mce-group[4597]-4597-1" value=
+                    "2">Chinese/中文</label>
+                  </div>
+
+                  <div style="position: absolute; left: -5000px;">
+                    <input type="text" name=
+                    "b_d42c325e70acd0bf473ef02c3_93a9796420"
+                    tabindex="-1" value="">
+                  </div><br>
+                  <br>
+                  <input type="submit" value="Subscribe" name=
+                  "subscribe" id="mc-embedded-subscribe" class=
+                  "button btn btn-primary">
+                </form>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <!--<img class="img-responsive" src="http://placehold.it/750x500">-->
-                    <div id="mapregion">
-                        <div id="map-canvas" style="height : 500px; position: relative; z-index: 1" }></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="input-group">
-                        <input type="text" id="lblLocation" class="form-control" placeholder="Search by Location" name="address">
-                        <span class="input-group-btn">
-                        <button id="btnFindLocation" class="btn btn-primary" type="button" 
-                            onclick="codeAddress(document.getElementById('lblLocation').value)">
-                        Find!
-                        </button>
-                        </span>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <b>Area &nbsp;</b>
-                            <div id="defaultslide" class=".col-md-1"></div>
-                        </div>
-                        <div class="col-md-6 input-group btn-group">
-                            <span class="input-group-addon "><b class="glyphicon glyphicon-eye-open"></b></span>
-                            <select class="multiselect btn-primary">
-                                <option value="HeavyMetals">Heavy Metals</option>
-                                <option value="Nitrate">Nitrate</option>
-                                <option value="Permanganate">Permanganate</option>
-                                <option value="Phosphate">Phosphate</option>
-                            </select>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="alert alert-danger">The score of the area: <b>40</b> out of 100. The water quality is <b>20%</b> below average.</div>
-                    <table class="table table-bordered">
-                        <tr>
-                            <td class="field-label active">
-                                <label>Heavy Metals</label>
-                            </td>
-                            <td>
-                                <font color="red" id="heavy-metal-display">High Risk (150% over national standard)</font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="field-label active">
-                                <label>Nitrate</label>
-                            </td>
-                            <td>
-                                <font color="red">High Risk (400% over national standard)</font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="field-label active">
-                                <label>Permanganate</label>
-                            </td>
-                            <td>
-                                <font color="orange">Medium Risk</font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="field-label active">
-                                <label>Phosphate</label>
-                            </td>
-                            <td>
-                                <font color="orange">Medium Risk</font>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="page-header">Popular Views</h3>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300">
-                    </a>
-                </div>
-            </div>
+          </div><!-- End MailChimp Signup Form -->
         </div>
-        <!-- /.container -->
-        <div class="container">
-            <hr>
-        </div>
-        <!-- /.container -->
-        <!-- Loading the Google Map from database -->
-        <script type="text/javascript">
-            var data = [];
-        </script>
-        <?php 
-            include 'query.php'; 
-            $result = all_points();
-            // echo <h1> . $result . </h1>;
-            
-            echo '<script type="text/javascript">';
-            while ($line = mysqli_fetch_array($result, MYSQL_ASSOC)) {
-                // Sorry this is possibly the ugliest code I've ever written but it works!
-                echo 'data.push(' . json_encode($line) . ');';
-            }
-            echo '</script>';
-            ?>
-        <script src="js/droplet_icons.js" type "text/javascript"></script>
-        <script src="js/load_data.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            // Sorry for using global variables. I was having scope issues when passing local variables to initialize()
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-    </body>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </div>
+</body>
 </html>

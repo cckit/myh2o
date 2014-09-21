@@ -18,7 +18,7 @@
         </script>
     </head>
     <body>
-        <?php echo file_get_contents('theme/nav_bar.php') ?>
+        <?php echo file_get_contents('theme/nav_fixed.php') ?>
         <!-- Carousel
             ================================================== -->
         <div id="myCarousel" class="carousel slide">
@@ -41,7 +41,7 @@
                             </p>
                             <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small="">
                             <p></p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
+                            <p><a class="btn btn-lg btn-primary" href="#" style="visibility:hidden">Learn More</a>
                             </p>
                             </pthis>
                         </div>
@@ -54,7 +54,7 @@
                         <div class="carousel-caption">
                             <h1>China’s Water Pollution</h1>
                             <p>280 million people use unsafe drinking water<br>Half of the urban drinking water supplies do not meet national standards</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a>
+                            <p><a class="btn btn-lg btn-primary" href="#" style="visibility:hidden">Learn More</a>
                             </p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="carousel-caption">
                             <h1>Be the Change</h1>
                             <p>Join our champaign and Educate people</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up</a>
+                            <p><a style="visibility:hidden" class="btn btn-lg btn-primary" href="#">Sign up</a>
                             </p>
                         </div>
                     </div>
@@ -91,21 +91,21 @@
                     <!--<img class="img-feature img-circle" src="http://placehold.it/140x140">-->
                     <h2>Credible Sources</h2>
                     <p>Thousands of entries and still growing. <br>Constantly verified and updated.</p>
-                    <p><a class="btn btn-default" href="#">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="#">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="img-feature" style="background-image: url('images/bg/bgFeature2.png')"></div>
                     <h2>Interactive Map</h2>
                     <p>Type in your address<br>Understand your water quality with a click</p>
-                    <p><a class="btn btn-default" href="map.php">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="map.php">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="img-feature" style="background-image: url('images/bg/bgFeature3.jpg')"></div>
                     <h2>Easy Water Testing</h2>
                     <p>Purchase a rapid water testing kit or<br>Request a professional laboratory testing</p>
-                    <p><a class="btn btn-default" href="#">View details »</a>
+                    <p><a class="btn btn-default" style="display: none;" href="#">View details »</a>
                     </p>
                 </div>
             </div>
@@ -114,5 +114,33 @@
             <hr class="featurette-divider">
         </div>
         <!-- /.container -->
+
+        <!-- Begin MailChimp Signup Form -->
+        <div class="container marketing">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                    <form class="form-horizontal" role="form" name="mc-embedded-subscribe-form" action="//MyH2O.us8.list-manage.com/subscribe/post?u=d42c325e70acd0bf473ef02c3&amp;id=93a9796420" method="post" class="validate" target="_blank">
+                        <p class="text-center" style="font-size: 1.4em; font-weight: bold;">Sign up to receive updates<br>from MyH2O</p>
+                        <div class="form-group has-feedback">
+                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email" required>
+                            <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="First name">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Last name">
+                        </div>
+                        <strong>What language you want? </strong> <br>
+                        <div class="radio-inline"><label><input type="radio" name="group[4597]" id="mce-group[4597]-4597-0" value="1" checked>English</label></div>
+                        <div class="radio-inline"><label><input type="radio" name="group[4597]" id="mce-group[4597]-4597-1" value="2">Chinese/中文</label></div>
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_d42c325e70acd0bf473ef02c3_93a9796420" tabindex="-1" value=""></div><br><br>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
+                    </form>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <!-- End MailChimp Signup Form -->
     </body>
 </html>
