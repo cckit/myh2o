@@ -135,7 +135,13 @@ var initialize = function initialize() {
     }(markers[i]));*/
 
 	var infoWindow_baidu = new BMap.InfoWindow(content);
-	markers[i].addEventListener("click", function(){this.openInfoWindow(infoWindow_baidu);});
+	markers[i].addEventListener("click", function(){
+    this.openInfoWindow(infoWindow_baidu);
+    $('#heavy-metal-display').text(cur['heavy_metal'] + ' mg/L');
+    $('#nitrate-display').text(cur['ammonium_nitrate'] + ' mg/L');
+    $('#permanganate-display').text(cur['permanganate'] + ' mg/L');
+    $('#phosphate-display').text(cur['phosphate'] + ' mg/L');
+  });
   }
   var markerClusterer = new BMapLib.MarkerClusterer(map_baidu, {markers:markers});
 }

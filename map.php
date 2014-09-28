@@ -1,3 +1,8 @@
+<?php
+  if(isset($_GET["internal"]))
+     include("map_internal.php");
+   else {
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html>
@@ -101,3 +106,6 @@
   </div>
 </body>
 </html>
+<?php
+  }
+?>
